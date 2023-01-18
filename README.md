@@ -15,7 +15,7 @@
  ---
  
 <details>
-     <summary > <h3>Primitive Types</h3></summary>
+     <summary > <h3>  Primitive Types</h3></summary>
    
 #####     💠 [Primitive Types](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l1/PrimitiveTypes.java)
 
