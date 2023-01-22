@@ -24,7 +24,7 @@
 <details>
      <summary > <h3>  Primitive Types</h3></summary>
    
-#####     💠 [Primitive Types]()
+#####     💠 [Primitive Types](https://github.com/NumanKartall/EfficientHouseJava/blob/main/readme2.md)
 
 </details>
 
