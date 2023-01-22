@@ -1,387 +1,494 @@
 
-<div>
-<h1 align="center">ＪＡＶＡ 🆂🅴 </br> <img align="center" width="160" height="160" src="https://r.resimlink.com/F8ZyR.png"/>  <img align="center" width="182" height="180" src="https://r.resimlink.com/HtbJj07Cxkyr.png"/> </h1>
-</div>
-
-### <h3 align="center"> **Code implementation and exercises from _Absolute Java_ book**.</h3> </br> </br> </br>
-
-
-<!--########################################################################################################################-->
-<!-- JAVA LANGUAGE BASİCS -->
-
-<details>
-     <summary align="center" ><h1>𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲 𝗕𝗮𝘀𝗶𝗰𝘀</h1></summary>
- 
- ---
- 
-<details>
-     <summary > <h3>  Primitive Types</h3></summary>
-   
-#####     💠 [Primitive Types](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l1/PrimitiveTypes.java)
+# Methods
 
-</details>
-
-
-<details>
-     <summary><h3> Operators</h3></summary>
-   
-#####     💠 [Operators](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l2/Operators.java)
-
-#####     💠 [And Operators ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l6/AndOperators.java)    
-
-#####     💠 [Or Operators ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l6/OrOperators.java)    
-
-#####     💠 [Ternary Operator ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l6/TernaryOperator.java)   
-      
-<details>
-     <summary>   <h4>Operators Examples</h4></summary>
-   
-######       🔸 [Example - Ⅰ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l2/OperatorsExample.java) 
-     
-</details>
-
-</details>
-
-<details>
-     <summary><h3> Expression and Assigment</h3></summary>
-   
-#####     💠 [Expression and Assigment](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l2/ExpressionsAndAssignment.java)
-     
-</details>
-     
----
-     
-</details>
-
-
-
-
-<!--########################################################################################################################-->
-<!-- JAVA CONSOL İNPUT OUTPUT -->
-
-<details>
-     <summary align="center" ><h1>𝗖𝗼𝗻𝘀𝗼𝗹 𝗜𝗻𝗽𝘂𝘁 𝗮𝗻𝗱 𝗢𝘂𝘁𝗽𝘂𝘁</h1></summary>
-
-<details>
-     <summary><h3>String</h3></summary>
-   
-##### 💠 [String Class](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l3/string/StringClass.java)
-     
-<details>
-     <summary><h3>String Methods</h3></summary>
-   
-##### 💠 [CharAt](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l3/string/ChartAt.java)
-##### 💠 [CompareTo](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l3/string/CompareTo.java)  
-##### 💠 [Equals](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l3/string/Equals.java)  
-##### 💠 [Immutable](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l3/string/Immutable.java)  
-##### 💠 [IndexOf](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l3/string/IndexOf.java)  
-##### 💠 [Length](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l3/string/Length.java)  
-##### 💠 [SubString](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l3/string/SubString.java)
-##### 💠 [Trim](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l3/string/Trim.java)  
-##### 💠 [UpperLowerCase](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l3/string/UpperLower.java)      
-     
-</details>
-     
-</details>
-
-     
-<details>
-     <summary><h3>Print Methods</h3></summary>
-   
-##### 💠 [Print Methods](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l4/PrintMethods.java) 
-
-</details>
-
-     
-<details>
-     <summary><h3>Scanner Class</h3></summary>
-   
-##### 💠 [Scanner Class](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l5/ScannerClass.java)
-     
-<details>
-     <summary><h4>Scanner Examples</h4></summary>
-
-###### 🔸 [Example - Ⅰ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l5/ScannerExamples.java)
+All method definitions belong to some class, and all method definitions are given inside the definition of the class to which they belong.
 
-</details>     
-
-</details>
+A method definition is divided into two parts, a **heading** and a **method body**, as illustrated by the annotation on the method definition.
 
----     
-     
-</details>
-
-
-
-
-<!--########################################################################################################################-->
-<!-- JAVA BRANCHING MECHANISM -->
-
-<details>
-     <summary align="center" ><h1>𝗕𝗿𝗮𝗻𝗰𝗵𝗶𝗻𝗴 𝗠𝗲𝗰𝗵𝗮𝗻𝗶𝘀𝗺</h1></summary>
-  
-<details>
-     <summary><h3>If - Else</h3></summary>   
-     
-##### 💠 [If - Else ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l6/IfElse.java)       
-     
-<details>
-     <summary><h4>If - Else Examples</h4></summary>
-
-###### 🔸 [Example - Ⅰ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l6/IfElseExample.java)
-###### 🔸 [Example - Ⅱ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l6/IfElseExample2.java)
-###### 🔸 [Example - Ⅲ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l6/IfElseExample3.java)
-###### 🔸 [Example - Ⅳ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l6/IfElseExample4.java)
-</details>
-
-<details>
-     <summary><h3>Boolean Expressions</h3></summary>     
-
-##### 💠 [Boolean Expressions ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l6/BooleanExpressions.java) 
-          
-</details> 
-             
-</details>   
-
-     
-<details>
-     <summary><h3>Switch - Case</h3></summary>
-     
-##### 💠 [Switch - Case ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l10/SwitchIntro.java)     
-
-<details>
-     <summary><h4>Switch - Case Examples</h4></summary>
-
-###### 🔸 [Example - Ⅰ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l10/SwitchExample.java)
-###### 🔸 [Example - Ⅱ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l10/SwitchExample2.java)
-###### 🔸 [Example - Ⅲ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l10/MenuApp.java)
-###### 🔸 [Example - Ⅳ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l10/LeapYear.java)     
-
-</details>
-     
-</details>
-
----
-     
-</details>
-
-
-
-
-<!--########################################################################################################################-->
-<!--JAVA FOR - WHİLE - DO WHİLE LOOPS -->  
-
-<details>
-     <summary align="center" ><h1>𝗟𝗼𝗼𝗽𝘀</h1></summary>
-     
-<details>
-     <summary><h3>For</h3></summary>
-     
-##### 💠 [For Intro](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l9/ForIntro.java)    
-
-<details>
-     <summary><h4>For Examples</h4></summary>
-
-###### 🔸 [Example - Ⅰ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l9/ForExample1.java)
-###### 🔸 [Example - Ⅱ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l9/ForExample2.java)
-###### 🔸 [Example - Ⅲ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l9/ForExample3.java)
-###### 🔸 [Example - Ⅳ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l9/ForExample4.java)
-###### 🔸 [Example - Ⅴ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l9/ForExample5.java)
-###### 🔸 [Example - Ⅵ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l9/ForExample6.java)
-###### 🔸 [Example - Ⅶ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l9/ForExample7.java)
-###### 🔸 [Example - Ⅷ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l9/ForExample8.java)   
-###### 🔸 [Example - Ⅸ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l9/ForExample9.java)   
-
-</details>
-     
-</details>
-     
-     
-<details>
-     <summary><h3>While</h3></summary>
-     
-##### 💠 [While Intro](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l8/WhileIntro.java)    
-
-<details>
-     <summary><h4>While Examples</h4></summary>
-
-###### 🔸 [Example - Ⅰ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l8/WhileExample.java)
-###### 🔸 [Example - Ⅱ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l8/WhileExample2.java)
-###### 🔸 [Example - Ⅲ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l8/WhileExample3.java)
-###### 🔸 [Example - Ⅳ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l8/WhileExample4.java)
-###### 🔸 [Example - Ⅴ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l8/WhileExample5.java)
-###### 🔸 [Example - Ⅵ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l8/WhileExample6.java)
-###### 🔸 [Example - Ⅶ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l8/WhileExample7.java)
-     
-</details>
-     
-<details>
-     <summary><h3>Infinity Loops</h3></summary>
-     
-##### 💠 [Infinity Loops](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l8/InfinityLoopWithWhile.java)    
-     
-</details>       
-     
-</details>     
-
-     
-<details>
-     <summary><h3>Do While</h3></summary>
-     
-##### 💠 [Do While Intro](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l8/DoWhileIntro.java)    
-
-<details>
-     <summary><h4>Do While Examples</h4></summary>
-
-###### 🔸 [Example - Ⅰ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l8/DoWhileExample.java)
-     
-</details>
-     
-</details>
-
-
-<details>
-     <summary><h3>Continue - Break</h3></summary>        
-     
-##### 💠 [Continue ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l10/ContinueExample.java)
-     
-##### 💠 [Break ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l9/Break.java)
-     
-##### 💠 [Labeled Break ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l9/LabeledBreak.java) 
-     
-<details>
-     <summary><h4>Break Examples</h4></summary>
-
-###### 🔸 [Example - Ⅰ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l9/BreakIntro.java)
-
-</details>
-     
-</details>     
-     
----     
-     
-</details>
-
-
-
-
-<!--########################################################################################################################-->
-<!--JAVA METHODS -->
-
-<details>
-     <summary align="center" ><h1>𝗠𝗲𝘁𝗵𝗼𝗱𝘀</h1></summary>
-     
-<details>
-     <summary><h3>Methods</h3></summary>
-
-##### 💠 [Methods Intro](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l7/MethodIntro.java)      
-
-<details>
-     <summary><h4>Methods Examples</h4></summary>
-
-###### 🔸 [Example - Ⅰ ](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l7/MethodIntroExample.java)
-     
-</details>     
-     
-</details>
-
-     
-<details>
-     <summary><h3>Method Calling</h3></summary>
-     
-##### 💠 [Method Calling](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l7/MethodCalling.java)    
-     
-</details>
-    
-     
-<details>
-     <summary><h3>Method with Parameters</h3></summary>
-     
-##### 💠 [Method with Parameters](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l7/MethodsWithParameters.java)    
-     
-</details>       
-     
-     
-<details>
-     <summary><h3>Void Type Methods</h3></summary>
-     
-##### 💠 [Void Type Methods](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l7/VoidTypeMethods.java)    
-     
-</details>  
-     
-
-<details>
-     <summary><h3>Return Type Methods</h3></summary>
-     
-##### 💠 [Return Type Methods](https://github.com/erenuygur/EfficientHouseJava/blob/main/src/lessons/l7/ReturnTypeMethods.java)    
-     
-</details>      
-
----     
-     
-</details>
-
-
-
-
-<!--########################################################################################################################-->
-<!--JAVA OOP (Object Oriented Programming) -->
-
-<details>
-     <summary align="center" ><h1>𝗢𝗢𝗣 (𝗢𝗯𝗷𝗲𝗰𝘁 𝗢𝗿𝗶𝗲𝗻𝘁𝗲𝗱 𝗣𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗶𝗻𝗴)</h1></summary>
-     
-<details>
-     <summary><h3>Intro</h3></summary>
- 
-##### 💠 [User Defined Type](https://github.com/NumanKartall/EfficientHouseJava/blob/main/src/lessons/l11/oop/intro/UserDefinedType.java)
-     
-##### 💠 [Class Members](https://github.com/NumanKartall/EfficientHouseJava/blob/main/src/lessons/l11/oop/intro/ClassMembers.java)         
-    
-##### 💠 [Cast](https://github.com/NumanKartall/EfficientHouseJava/blob/main/src/lessons/l11/oop/intro/Cast.java)
-      
-##### 💠 [Defaults](https://github.com/NumanKartall/EfficientHouseJava/blob/main/src/lessons/l11/oop/intro/Defaults.java)     
-
-<details>     
-     <summary><h4>Intro Examples</h4></summary>
-     
-###### 🔸 [Example - Ⅰ ](https://github.com/NumanKartall/EfficientHouseJava/blob/main/src/lessons/l11/oop/intro/Example1.java)     
-
-</details>
-     
-<details>     
-     <summary><h3>Stack - Heap</h3></summary>
-     
-##### 💠 [Stack](https://github.com/NumanKartall/EfficientHouseJava/blob/main/src/lessons/l11/oop/intro/StackExample.java)
-     
-##### 💠 [Heap](https://github.com/NumanKartall/EfficientHouseJava/blob/main/src/lessons/l11/oop/intro/Heap.java) 
-     
-</details>
-     
-</details>          
-
-     
-<details>
-     <summary><h3>Mid</h3></summary>
- 
-##### 💠 [Two Reference One Instance](https://github.com/NumanKartall/EfficientHouseJava/blob/main/src/lessons/l11/oop/mid/TwoReferenceOneInstance.java)
-
-##### 💠 [References and Object ](https://github.com/NumanKartall/EfficientHouseJava/blob/main/src/lessons/l11/oop/mid/Example.java)   
-
-<details>     
-     <summary><h4>DateUtil Examples</h4></summary>
-
-###### 🔸 [Example - Ⅰ ](https://github.com/NumanKartall/EfficientHouseJava/blob/main/src/lessons/l11/oop/mid/Tricky.java)         
- 
-###### 🔸 [Example - Ⅱ ](https://github.com/NumanKartall/EfficientHouseJava/blob/main/src/lessons/l11/oop/mid/date/DateUtil.java)              
-     
-</details>     
-
-</details>         
- 
----     
-     
-</details>
-
-
-
-<!--TO BE CONTİUNED-->
+The way you invoke a method from a class definition you write is the same as the way you do it for a predefined class.
+
+```java
+public static void Main(string[] args)
+{
+	DateFirstTry date1, date2; 
+	date1.writeOutput();
+}
+
+/* DateFirstTryDemo is an invocation of the method writeOutput with 
+date1 as the calling object. */
+public class DateFirstTry
+{
+
+	public String month;
+	public int day;
+	public int year;
+
+	public void writeOutput()
+	{
+	System.out.println(month + " " + day + " " + year);
+	}
+}
+```
+
+This invocation is equivalent to execution of the method body.
+
+```java
+//So, this invocation is equivalent to
+System.out.println(month + " " + day + ", " + year);
+```
+
+> If you simply replace the method invocation with this System.out.println statement, you will get a compiler error message.  within the definition for the method writeOutput,
+> 
+
+<aside>
+💡  the names of the instance variables are used without any calling object. *This is because the method will be invoked with different calling objects at different times. When an instance variable is used in a method definition, it is understood to be the instance variable of the calling object.*
+
+</aside>
+
+```java
+System.out.println(date1.month + " " + date1.day + ", " + date1.year); 
+//is equivalent to
+date1.writeOutput();
+
+```
+
+Methods are of two types, one is **void type** methods and the other is **return type** methods.
+
+```java
+public Type_Returned  Method_Name (Parameter_List)
+{
+
+}
+```
+
+<aside>
+💡 If a method returns a value, then it can return different values in different situations,
+but all values returned must be of the same type, which is specified as the type returned
+
+</aside>
+
+```java
+public double myMethod() 
+{
+	//...
+	return double_value; // the method always must be returns a value of type double
+}
+
+public String yourMethod() 
+{
+	//...
+	return String_value; // indicates a method that always returns a value of type String
+}
+
+public void ourMethod()
+{
+	//...
+
+	return; // Terminates the method call. It expires the Method Frame and the Method's Scope. Keeps Flowing.
+}
+
+```
+
+> when the method returns no value at all, we use the keyword void in place
+of a type. If you think of void as meaning “no returned type,” the word void begins
+to make sense.
+> 
+
+An **invocation** of a method that returns a value can be used as an expression anyplace
+that a value of the Type_Returned can be used.
+
+```java
+double d = anObject.myMethod(); //method invocation.
+
+```
+
+<aside>
+💡 A  virtual frame is opened where the method is called.
+
+</aside>
+
+A void method doesn’t return a value, but simply performs an action, so an invocation of a void method is a statement.
+
+```java
+anObject.ourMethod();
+```
+
+ **body** of a void method definition is simply a list of declarations and statements enclosed in a pair of braces,( { } —> Scope )
+
+```java
+public void ourMethod()
+{
+ System.out.println("Hello");
+ System.out.println("from our method.");
+}
+```
+
+The body of a method that returns a value is the same as the body of a void method but with one additional requirement.  The body of a method that returns a value must
+contain at least one return statement
+
+```java
+public String yourMethod()
+{
+ Scanner keyboard = new Scanner(System.in);
+ System.out.println("Enter a line of text");
+ String result = keyboard.nextLine();
+ return result + " was entered.";  //return Expression;
+}
+```
+
+A return statement is of the form where Expression can be any expression that evaluates to something of the Type_Returned that is listed in the method heading
+
+A method that returns a value can do other things besides returning a value,(Side Effect) but style rules dictate that whatever else it does should be related to the value returned.
+
+<aside>
+💡 A return statement always ends a method invocation. Once the return statement is executed, the method ends, and any remaining statements in the method definition are not executed
+
+</aside>
+
+<aside>
+💡 If you want to end a void method before it runs out of statements, you can use a return statement without any expression A void method need not have any return statements, but you can place a return statement in a void method if there are situations that require the method to end before all the code is executed.
+
+</aside>
+
+```java
+public void ourMethod()
+{
+ System.out.println("Hello");
+ System.out.println("from our method.");
+	return;  //Method çağrısını sonlandırır. Method Frame'ini Methodun Scope'unu yani ömrünü bitirir. Akışı Devam Ettirir.
+}
+
+```
+
+// Summary // 
+
+There are two kinds of methods: methods that return a value and methods, known as void
+methods, that perform some action other than returning a value.
+
+```java
+	//Definition of Return Type.
+public Type_Returned Method_Name(Parameter_List)
+{
+ /*
+	Statements...
+** at least one of which must contain a return statement.
+*/
+}
+
+// If there are no Parameters, then the parentheses are empty.
+
+Ex.
+public int getDay()
+{
+
+ return day;
+}
+
+	//Definition of Void Type
+public void Method_Name(Parameter_List)
+{
+ //Statements...
+}
+Ex.
+public void writeOutput()
+{
+ System.out.println(month + " " + day + ", " + year);
+
+// no need return statements if we use. the method flowing is terminate.
+}
+
+```
+
+<aside>
+💡 When an instance variable name is used in a method definition, it refers to an instance
+variable of the calling object.
+
+</aside>
+
+all these method definitions must be inside of some class definition. Java does not have any stand-alone methods that are not in any class.
+
+```java
+public class DemoOfDateSecondTry
+{
+	public static void main(String[] args)
+	{
+		DateSecondTry date = new DateSecondTry();
+		date.readInput(); // An invocation of a void method is astatement.
+		int dayNumber = date.getDay(); 
+
+/* An invocation of a method that returns a value is an expression that can be
+used anyplace that a value of the type returned by the method can be used. */
+	
+		System.out.println("That is the " + dayNumber + "th day of the month.");
+	}
+}
+
+**The value to be returned value must be used by a variable.**
+
+```
+
+```java
+public int getDay()
+{
+	return day;
+	}
+	public int getYear()
+	{
+	return year;
+	}
+		public int getMonth()
+		{
+		if (month.equalsIgnoreCase("January"))
+		return 1;
+	
+		else if (month.equalsIgnoreCase("February"))
+		return 2;
+	
+		else if (month.equalsIgnoreCase("March"))
+		return 3;
+	
+		else if (month.equalsIgnoreCase("April"))
+		return 4;
+	
+		else if (month.equalsIgnoreCase("May"))
+		return 5;
+	
+		else if (month.equalsIgnoreCase("June"))
+		return 6;
+	
+		else if (month.equalsIgnoreCase("July"))
+		return 7;
+	
+		else if (month.equalsIgnoreCase("August"))
+		return 8;
+	
+		else if (month.equalsIgnoreCase("September"))
+		return 9;
+	
+		else if (month.equalsIgnoreCase("October"))
+		return 10;
+	
+		else if (month.equalsIgnoreCase("November"))
+		return 11;
+	
+		else if (month.equalsIgnoreCase("December"))
+		return 12;
+	
+			else
+			{
+				System.out.println("Fatal Error");
+				return 0; //Needed to keep the compiler happy
+			}
+		}
+}
+```
+
+```java
+import java.util.Scanner;
+
+public class DateSecondTry
+{
+	private String month;
+	private int day;
+	private int year; 
+	public void writeOutput()
+	{
+		System.out.println(month + " " + day + ", " + year);
+	}
+public void readInput()
+{
+	Scanner keyboard = new Scanner(System.in);
+	System.out.println("Enter month, day, and year.");
+	System.out.println("Do not use a comma.");
+	month = keyboard.next();
+	day = keyboard.nextInt();
+	year = keyboard.nextInt();
+}
+```
+
+```java
+public class MethodIntro {
+    public static void main(String[] args)
+    {
+        System.out.println("main starts ;)");
+        MethodIntro.foo();  
+        MethodIntro.bar();
+        tar();  //Since the access identifier of the specified method is public,it can be used remotely. 
+								//Thus, there is no need to write a class name for the method.
+        System.out.println("main ends ;(");
+    }
+
+    public static void foo()
+    {
+        System.out.println("foo()");
+    }
+
+    public static void bar()
+    {
+        System.out.println("bar()");
+    }
+
+    public static void tar()
+    {
+        System.out.println("tar()");
+    }
+}
+```
+
+```java
+public class MethodCalling {
+    public static void main(String[] args)
+    {
+        System.out.println("main method starts ;)");
+        foo("call foo()");     //I sent a String argument.
+        bar("call bar()");
+        tar("call tar()");
+        System.out.println("main method ends ;(");
+    }
+
+    public static void foo(String message)
+    {
+        System.out.println(message); //and I get String parameter.
+    }
+
+    public static void bar(String message)
+    {
+        System.out.println(message);
+    }
+
+    public static void tar(String message)
+    {
+        System.out.println(message);
+    }
+}
+
+```
+
+```java
+public class MethodIntroExample {
+    public static void main(String[] args)
+    {
+        System.out.println("main method starts ;)");
+        foo();
+        bar();
+        tar();
+        System.out.println("main method ends ;(");
+    }
+
+    public static void foo()
+    {
+        System.out.println("foo()");
+        bar();
+    }
+
+    public static void bar()
+    {
+        System.out.println("bar()");
+        tar();
+    }
+
+    public static void tar()
+    {
+        System.out.println("tar()");
+    }
+}
+```
+
+```java
+public class VoidTypeMethods {
+    public static void main(String[] args)
+    {
+        isEven(10);
+        isEven(11);
+        isEven(-3);
+    }
+
+    public static void isEven(int val)
+    {
+        if (val < 0) {
+            System.out.println("Illegal input: You can not enter negative value.");
+            return;
+        }
+
+        if (val % 2 == 0)
+            System.out.printf("%d is Even number%n", val);
+        else
+            System.out.printf("%d is not Even number%n", val);
+    }
+}
+```
+
+```java
+public class ReturnTypeMethods {
+    public static void main(String[] args)
+    {
+        java.util.Scanner keyboard = new java.util.Scanner(System.in);
+
+        int sum = addTwoNumbers(5, 10);
+        // addTwoNumbers(int a, int b)  a = 5 || b = 10
+        // int temp = 15
+        // int sum = temp;
+        System.out.println(sum); // 15
+
+        sum = addThreeNumbers(sum, 12, 13); // 40
+        // addThreeNumbers(sum, 12, 13)  sum = 15
+        // addThreeNumbers(int a, int b, int c) a = 15 || b = 12 || c = 13
+        // return 15 + 12 + 13;
+        // int temp = 40;
+        // int sum = temp;
+        // int sum = 40;
+        System.out.println(sum); // 40
+
+        System.out.print("val: ");
+        int val = keyboard.nextInt();
+
+        System.out.printf("%d is Even ? = %b", val, isEven(val));
+
+    }
+
+    public static int addTwoNumbers(int a, int b)
+    {
+        return a + b; // int temp = a + b;
+    }
+
+    public static int addThreeNumbers(int a, int b, int c)
+    {
+        return a + b + c;
+    }
+
+    public static boolean isEven(int val)
+    {
+        return val % 2 == 0;
+        // boolean temp = val % 2 == 0;
+    }
+}
+
+```
+
+//  
+
+## Local Variables And Parameters.
+
+A variable declared within a method is called a local variable. It is called local because they may be two different variables that just happen to have the same name. Any change that is made to the variable named A within one method would have no effect upon the variable named A in the other method.
+
+All variables declared in main are variables local to the method main. If a variable declared in main happens to have the same name as a **v**ariable declared in some other method, they are
+two different variables that just happen to have the same name. 
+
+```java
+public static void Main(String[] args)
+{
+  int a = 5;  //this is local variable.
+
+	double a = 4; //IT'S ERROR.  Two variables with the same name cannot be defined in a scope.
+
+	 tar(a);
+}
+public static void tar(int a)  //this is parameter variable.
+{
+	int a = 3 ; //IT'S ERROR BECAUSE WE ALREADY DEFİNED a;
+}
+```
+
+There are 3 types of variables in Java, one is local variables, one is parameter variables and one is static variables. We discuss static variables after.
+
+[Method Signature and Overloading Method.](https://www.notion.so/Method-Signature-and-Overloading-Method-53f0730bfc744cabb2c6ba9c5592a48f)
