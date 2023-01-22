@@ -21,6 +21,12 @@
 
 </details>
 
+<details>
+     <summary > <h3>  Primitive Types</h3></summary>
+   
+#####     💠 [Primitive Types]()
+
+</details>
 
 <details>
      <summary><h3> Operators</h3></summary>
