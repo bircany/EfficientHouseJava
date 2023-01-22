@@ -1,0 +1,1039 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Methods</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="8d97a20a-17bc-45da-808e-d747d5827d9c" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🥶</span></div><h1 class="page-title">Methods</h1></header><div class="page-body"><p id="8ac3aa99-1054-4af4-afb8-e4d7e9388169" class="">
+</p><p id="f4fd960c-1933-4336-a3bc-b45908aa44b8" class="">All method definitions belong to some class, and all method definitions are given inside the definition of the class to which they belong.</p><p id="b2f80246-01b2-4b84-8483-e34b4a45b7ba" class="">A method definition is divided into two parts, a <strong>heading</strong> and a <strong>method body</strong>, as illustrated by the annotation on the method definition.</p><p id="2e73f56f-0f9e-4bfe-a7a5-9c14b78ad928" class="">The way you invoke a method from a class definition you write is the same as the way you do it for a predefined class.</p><pre id="15c9abe2-193e-4a76-a48e-60877ce53a9b" class="code"><code>public static void Main(string[] args)
+{
+	DateFirstTry date1, date2; 
+	date1.writeOutput();
+}
+
+/* DateFirstTryDemo is an invocation of the method writeOutput with 
+date1 as the calling object. */
+public class DateFirstTry
+{
+
+	public String month;
+	public int day;
+	public int year;
+
+	public void writeOutput()
+	{
+	System.out.println(month + &quot; &quot; + day + &quot; &quot; + year);
+	}
+}</code></pre><p id="7fd8a3c5-db9b-4e7c-a299-ddd59af98fad" class="">This invocation is equivalent to execution of the method body.</p><pre id="2385dfb7-7ace-414c-94da-958382957eb3" class="code"><code>//So, this invocation is equivalent to
+System.out.println(month + &quot; &quot; + day + &quot;, &quot; + year);</code></pre><blockquote id="74d8a3cd-f56f-46a8-9013-ab307bb8fedb" class="">If you simply replace the method invocation with this System.out.println statement, you will get a compiler<mark class="highlight-red"> error message. </mark> within the definition for the method writeOutput,</blockquote><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="35550428-e4fe-43e0-be44-c9a35e6b0006"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"> <mark class="highlight-purple">the names of the instance variables are used without any calling object.</mark> <em>This is because the method will be invoked with different calling objects at different times. When an instance variable is used in a method definition, it is understood to be the instance variable of the calling object.</em></div></figure><p id="6f0875a3-8ee1-4cde-9e21-dd9a4f3d330b" class="">
+</p><pre id="63e5d339-91f9-4916-bc01-e122a8f45047" class="code"><code>System.out.println(date1.month + &quot; &quot; + date1.day + &quot;, &quot; + date1.year); 
+//is equivalent to
+date1.writeOutput();
+</code></pre><p id="2e7578fa-027f-4f80-a154-bb06315b7c8a" class="">Methods are of two types, one is <strong>void type</strong> methods and the other is <strong>return type</strong> methods.</p><p id="cfe50002-572a-487e-a3f7-ff41c8d70533" class="">
+</p><pre id="51c8d6d8-3cdf-4bdb-bed0-ea7474931b89" class="code"><code>public Type_Returned  Method_Name (Parameter_List)
+{
+
+}</code></pre><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="bbcd8d06-0113-47ee-9fa3-7d9dca051415"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">If a method returns a value, then it can return different values in different situations,
+but all values returned must be of the same type, which is specified as the type returned</div></figure><pre id="d4e919a0-bd01-4110-8ae3-465a88fae240" class="code"><code>public double myMethod() 
+{
+	//...
+	return double_value; // the method always must be returns a value of type double
+}
+
+
+
+
+public String yourMethod() 
+{
+	//...
+	return String_value; // indicates a method that always returns a value of type String
+}
+
+public void ourMethod()
+{
+	//...
+
+	return; // Terminates the method call. It expires the Method Frame and the Method&#x27;s Scope. Keeps Flowing.
+}
+
+
+</code></pre><blockquote id="6e99cdb2-2a1a-4696-9c09-2e3be7c637f3" class="">when the method returns no value at all, we use the keyword void in place
+of a type. If you think of void as meaning “no returned type,” the word void begins
+to make sense.</blockquote><p id="5f9f218a-98ef-4539-a096-7208a846a071" class="">
+</p><p id="65d681e0-1e94-460b-b4d3-daf2da6a76ed" class="">An <span style="border-bottom:0.05em solid"><strong>invocation</strong></span> of a method that returns a value can be used as an expression anyplace
+that a value of the Type_Returned can be used.</p><pre id="ea997851-fde5-427f-95d4-ae46018104ab" class="code"><code>double d = anObject.myMethod(); //method invocation.
+
+</code></pre><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="0df74d18-8454-434a-93c5-e77b418abc9c"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">A  virtual frame is opened where the method is called.</div></figure><p id="b9558463-ce72-4857-a073-55def9dc4c52" class="">A void method doesn’t return a value, but simply performs an action, so an invocation of a void method is a statement.</p><pre id="b5155440-33da-4338-a808-f16c0b4d24eb" class="code"><code>anObject.ourMethod();</code></pre><p id="9afebf3c-7a63-4832-8b46-ff1eefa7c06e" class=""> <mark class="highlight-pink"><span style="border-bottom:0.05em solid"><strong>body</strong></span></mark> of a void method definition is simply a list of declarations and statements enclosed in a pair of braces,( { } —&gt; Scope )</p><pre id="49b0a892-86a5-4596-ac69-a8c3bca59ed5" class="code"><code>public void ourMethod()
+{
+ System.out.println(&quot;Hello&quot;);
+ System.out.println(&quot;from our method.&quot;);
+}</code></pre><p id="22002035-4ce7-4b7e-b95e-8f579e19cf6e" class="">The body of a method that returns a value is the same as the body of a void method but with one additional requirement.  The body of a method that returns a value must
+contain at least one return statement</p><pre id="4ea26d41-6982-4fd4-9bfe-ead89d3f7122" class="code"><code>public String yourMethod()
+{
+ Scanner keyboard = new Scanner(System.in);
+ System.out.println(&quot;Enter a line of text&quot;);
+ String result = keyboard.nextLine();
+ return result + &quot; was entered.&quot;;  //return Expression;
+}</code></pre><p id="757e0f1f-d878-467c-8eda-3e02f67859ae" class="">A return statement is of the form where Expression can be any expression that evaluates to something of the <span style="border-bottom:0.05em solid">Type_Returned</span> that is listed in the method heading</p><p id="2f548cdc-3b08-42e0-b413-eb747d1b46a7" class="">
+</p><p id="5b5ab518-0777-4d69-ab4d-79c243a064fc" class="">A method that returns a value can do other things besides returning a value,(<mark class="highlight-pink">Side Effect</mark>) but style rules dictate that whatever else it does should be related to the value returned.</p><p id="a9490615-e6be-49c4-815e-72a330c05fcf" class="">
+</p><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="91dd2440-7a3b-4fea-957f-5dab2de62287"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">A return statement always ends a method invocation. Once the return statement is executed, the method ends, and any remaining statements in the method definition are not executed</div></figure><p id="ecb7b612-00df-451a-aa31-a4b6f5a34c38" class="">
+</p><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="aefc0db1-54d1-4821-b293-bf6de109f181"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">If you want to end a void method before it runs out of statements, you can use a return statement without any expression A void method need not have any return statements, but you can place a return statement in a void method if there are situations that require the method to end before all the code is executed.</div></figure><pre id="ef250f39-9176-40a7-860d-56bf53688247" class="code"><code>public void ourMethod()
+{
+ System.out.println(&quot;Hello&quot;);
+ System.out.println(&quot;from our method.&quot;);
+	return;  //Method çağrısını sonlandırır. Method Frame&#x27;ini Methodun Scope&#x27;unu yani ömrünü bitirir. Akışı Devam Ettirir.
+}
+</code></pre><p id="462245cb-b04a-4ab6-a1ad-83cf1d1eb9e3" class="">// Summary // </p><p id="2ea92554-ade0-4cb4-a624-a1092bdae671" class="">There are two kinds of methods: methods that return a value and methods, known as void
+methods, that perform some action other than returning a value.</p><pre id="de376639-e2a8-4f8c-afad-cacec9a7b54b" class="code"><code>	//Definition of Return Type.
+public Type_Returned Method_Name(Parameter_List)
+{
+ /*
+	Statements...
+** at least one of which must contain a return statement.
+*/
+}
+
+// If there are no Parameters, then the parentheses are empty.
+
+Ex.
+public int getDay()
+{
+
+ return day;
+}
+
+	//Definition of Void Type
+public void Method_Name(Parameter_List)
+{
+ //Statements...
+}
+Ex.
+public void writeOutput()
+{
+ System.out.println(month + &quot; &quot; + day + &quot;, &quot; + year);
+
+// no need return statements if we use. the method flowing is terminate.
+}
+
+
+
+</code></pre><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="77a9a0fa-4aaa-415a-b1fe-98696fe26dbc"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><mark class="highlight-pink">When an instance variable name is used in a method definition, it refers to an instance
+variable of the calling object.</mark></div></figure><p id="721541f6-0b3f-4503-81f3-ccb46d3b9497" class="">all these method definitions must be inside of some class definition. Java does not have any stand-alone methods that are not in any class.</p><pre id="cf362d8b-c1cf-4317-8a40-44fee4823cc7" class="code"><code>public class DemoOfDateSecondTry
+{
+	public static void main(String[] args)
+	{
+		DateSecondTry date = new DateSecondTry();
+		date.readInput(); // An invocation of a void method is astatement.
+		int dayNumber = date.getDay(); 
+
+
+/* An invocation of a method that returns a value is an expression that can be
+used anyplace that a value of the type returned by the method can be used. */
+	
+		System.out.println(&quot;That is the &quot; + dayNumber + &quot;th day of the month.&quot;);
+	}
+}
+
+
+The value to be returned value must be used by a variable.
+</code></pre><pre id="aa51aaf8-0373-4852-a17a-9e7c6dce9193" class="code"><code>public int getDay()
+{
+	return day;
+	}
+	public int getYear()
+	{
+	return year;
+	}
+		public int getMonth()
+		{
+		if (month.equalsIgnoreCase(&quot;January&quot;))
+		return 1;
+	
+		else if (month.equalsIgnoreCase(&quot;February&quot;))
+		return 2;
+	
+		else if (month.equalsIgnoreCase(&quot;March&quot;))
+		return 3;
+	
+		else if (month.equalsIgnoreCase(&quot;April&quot;))
+		return 4;
+	
+		else if (month.equalsIgnoreCase(&quot;May&quot;))
+		return 5;
+	
+		else if (month.equalsIgnoreCase(&quot;June&quot;))
+		return 6;
+	
+		else if (month.equalsIgnoreCase(&quot;July&quot;))
+		return 7;
+	
+		else if (month.equalsIgnoreCase(&quot;August&quot;))
+		return 8;
+	
+		else if (month.equalsIgnoreCase(&quot;September&quot;))
+		return 9;
+	
+		else if (month.equalsIgnoreCase(&quot;October&quot;))
+		return 10;
+	
+		else if (month.equalsIgnoreCase(&quot;November&quot;))
+		return 11;
+	
+		else if (month.equalsIgnoreCase(&quot;December&quot;))
+		return 12;
+	
+			else
+			{
+				System.out.println(&quot;Fatal Error&quot;);
+				return 0; //Needed to keep the compiler happy
+			}
+		}
+}</code></pre><pre id="d49c01e7-c4a5-432d-9ef6-e7a3cea1de46" class="code"><code>import java.util.Scanner;
+
+public class DateSecondTry
+{
+	private String month;
+	private int day;
+	private int year; 
+	public void writeOutput()
+	{
+		System.out.println(month + &quot; &quot; + day + &quot;, &quot; + year);
+	}
+public void readInput()
+{
+	Scanner keyboard = new Scanner(System.in);
+	System.out.println(&quot;Enter month, day, and year.&quot;);
+	System.out.println(&quot;Do not use a comma.&quot;);
+	month = keyboard.next();
+	day = keyboard.nextInt();
+	year = keyboard.nextInt();
+}</code></pre><pre id="cb4c02ba-3a1b-4383-a840-97c56a53dd53" class="code"><code>public class MethodIntro {
+    public static void main(String[] args)
+    {
+        System.out.println(&quot;main starts ;)&quot;);
+        MethodIntro.foo();  
+        MethodIntro.bar();
+        tar();  //Since the access identifier of the specified method is public,it can be used remotely. 
+								//Thus, there is no need to write a class name for the method.
+        System.out.println(&quot;main ends ;(&quot;);
+    }
+
+    public static void foo()
+    {
+        System.out.println(&quot;foo()&quot;);
+    }
+
+    public static void bar()
+    {
+        System.out.println(&quot;bar()&quot;);
+    }
+
+    public static void tar()
+    {
+        System.out.println(&quot;tar()&quot;);
+    }
+}</code></pre><p id="b56284bc-5016-4042-b9e5-5f6dfd86c14a" class="">
+</p><pre id="5b951b84-55b4-414c-9ca1-93ce5e265e9e" class="code"><code>public class MethodCalling {
+    public static void main(String[] args)
+    {
+        System.out.println(&quot;main method starts ;)&quot;);
+        foo(&quot;call foo()&quot;);     //I sent a String argument.
+        bar(&quot;call bar()&quot;);
+        tar(&quot;call tar()&quot;);
+        System.out.println(&quot;main method ends ;(&quot;);
+    }
+
+    public static void foo(String message)
+    {
+        System.out.println(message); //and I get String parameter.
+    }
+
+    public static void bar(String message)
+    {
+        System.out.println(message);
+    }
+
+    public static void tar(String message)
+    {
+        System.out.println(message);
+    }
+}
+</code></pre><pre id="32a23ed4-a43e-4a08-b5d6-8cc233122174" class="code"><code>public class MethodIntroExample {
+    public static void main(String[] args)
+    {
+        System.out.println(&quot;main method starts ;)&quot;);
+        foo();
+        bar();
+        tar();
+        System.out.println(&quot;main method ends ;(&quot;);
+    }
+
+    public static void foo()
+    {
+        System.out.println(&quot;foo()&quot;);
+        bar();
+    }
+
+    public static void bar()
+    {
+        System.out.println(&quot;bar()&quot;);
+        tar();
+    }
+
+    public static void tar()
+    {
+        System.out.println(&quot;tar()&quot;);
+    }
+}</code></pre><pre id="5b8d68cb-e79e-4cd9-b524-cb812c3fe4d1" class="code"><code>public class VoidTypeMethods {
+    public static void main(String[] args)
+    {
+        isEven(10);
+        isEven(11);
+        isEven(-3);
+    }
+
+    public static void isEven(int val)
+    {
+        if (val &lt; 0) {
+            System.out.println(&quot;Illegal input: You can not enter negative value.&quot;);
+            return;
+        }
+
+        if (val % 2 == 0)
+            System.out.printf(&quot;%d is Even number%n&quot;, val);
+        else
+            System.out.printf(&quot;%d is not Even number%n&quot;, val);
+    }
+}</code></pre><pre id="d555d4d0-8b45-4fea-889f-8e7e064b7410" class="code"><code>public class ReturnTypeMethods {
+    public static void main(String[] args)
+    {
+        java.util.Scanner keyboard = new java.util.Scanner(System.in);
+
+        int sum = addTwoNumbers(5, 10);
+        // addTwoNumbers(int a, int b)  a = 5 || b = 10
+        // int temp = 15
+        // int sum = temp;
+        System.out.println(sum); // 15
+
+        sum = addThreeNumbers(sum, 12, 13); // 40
+        // addThreeNumbers(sum, 12, 13)  sum = 15
+        // addThreeNumbers(int a, int b, int c) a = 15 || b = 12 || c = 13
+        // return 15 + 12 + 13;
+        // int temp = 40;
+        // int sum = temp;
+        // int sum = 40;
+        System.out.println(sum); // 40
+
+        System.out.print(&quot;val: &quot;);
+        int val = keyboard.nextInt();
+
+        System.out.printf(&quot;%d is Even ? = %b&quot;, val, isEven(val));
+
+    }
+
+    public static int addTwoNumbers(int a, int b)
+    {
+        return a + b; // int temp = a + b;
+    }
+
+    public static int addThreeNumbers(int a, int b, int c)
+    {
+        return a + b + c;
+    }
+
+    public static boolean isEven(int val)
+    {
+        return val % 2 == 0;
+        // boolean temp = val % 2 == 0;
+    }
+}
+</code></pre><p id="2ba3e8a7-dabe-4f3c-96a2-a128749b2229" class="">//  </p><p id="012d9c67-15f2-469c-879a-05117c5dc1d4" class="">
+</p><p id="6c48f4cd-2fbd-47e7-9d9e-7dafed0ac349" class="">
+</p><p id="948f4e33-3bf7-489c-9118-24ebb5553269" class="">
+</p><h2 id="8acf4515-5e24-4cfb-b990-b0ee8306a56a" class="">Local Variables And Parameters.</h2><p id="f47ddd2a-56ad-42d8-b558-a52f7e702c11" class="">A variable declared within a method is called a local variable. It is called local because they may be two different variables that just happen to have the same name. Any change that is made to the variable named A within one method would have no effect upon the variable named A in the other method.</p><p id="456b6cc7-27fa-47c8-b0b2-03aa9f45f56c" class="">All variables declared in main are variables local to the method main. If a variable declared in main happens to have the same name as a<strong> v</strong>ariable declared in some other method, they are
+two different variables that just happen to have the same name. </p><pre id="fe475fbd-7e2d-409f-9e01-a0f8a437bdd6" class="code"><code>public static void Main(String[] args)
+{
+  int a = 5;  //this is local variable.
+
+	double a = 4; //IT&#x27;S ERROR.  Two variables with the same name cannot be defined in a scope.
+
+	 tar(a);
+}
+public static void tar(int a)  //this is parameter variable.
+{
+	int a = 3 ; //IT&#x27;S ERROR BECAUSE WE ALREADY DEFİNED a;
+}</code></pre><p id="529156c5-7f65-4e08-a00c-e7c72026a131" class="">There are 3 types of variables in Java, one is local variables, one is parameter variables and one is static variables. We discuss static variables after.</p><p id="f6ac600a-3b2a-4575-9c59-57675767912a" class="">
+</p><p id="d52f77d5-bf4b-4e57-9e0e-50dd7bc9806c" class="">
+</p><p id="c4d88ec4-124d-438c-99e7-f5a92190fbad" class="">
+</p><p id="5420efbc-7c94-4a91-8773-1f0fa2b91c94" class="">
+</p><p id="dfa6c596-6a3d-4177-9875-a8052e292fe7" class="">
+</p><p id="ac06c50a-c648-4afd-8f73-8aedf5b03b75" class="">
+</p><p id="3806ef55-be54-451a-93a7-70d43484dfdf" class="">
+</p><p id="2cfeee15-1d71-4b7a-805c-fb40d94d349c" class="">
+</p><p id="95eb7737-2523-4c2a-ba65-12af1393c301" class="">
+</p><p id="4926b42c-2b7d-4ce8-89c2-c90248dc1463" class="">
+</p><p id="c9f4d439-ce07-47fb-bea6-91f76c4124de" class="">
+</p><p id="77852422-b06a-43a7-be2a-86a58a9e6c55" class="">
+</p><figure id="53f0730b-fc74-4cab-b2c6-ba9c5592a48f" class="link-to-page"><a href="https://www.notion.so/Method-Signature-and-Overloading-Method-53f0730bfc744cabb2c6ba9c5592a48f"><img class="icon" src="data:image/png;base64,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"/>Method Signature and Overloading Method.</a></figure></div></article></body></html>
