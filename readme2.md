@@ -1,32 +1,3 @@
-xKraltr
-#7680
-
-Bircan — 21.09.2022 21:05
-aga dersı ızlıyom bısı olursa yazarsın
-xKraltr — 21.09.2022 21:11
-bende izliyorum araya girince konuşuruz
-Bircan — bugün saat 19:47
-reis biz geldik
-xKraltr — bugün saat 19:54
-https://www.youtube.com/watch?v=jiCSs0Weiqk&list=PLfAfrKyDRWrG7tK01yW92A2j7Ou0qpOFm&ab_channel=PROTOTURK
-YouTube
-PROTOTURK
-HTML Dersleri -1 / Giriş
-Görsel
-https://www.youtube.com/watch?v=XlDMdKznPhU&list=PLfAfrKyDRWrFYc77WNfwQpS9-DBBdir_I&ab_channel=PROTOTURK
-YouTube
-PROTOTURK
-CSS Dersleri -1 / link Etiketi
-Görsel
-Bircan — bugün saat 20:19
-Ek dosya türü: archive
-Export-4949416d-540f-41f7-8e64-44cf6967c66a.zip
-1.48 KB
-Bircan — bugün saat 20:27
-Ek dosya türü: archive
-Export-92a8dce3-814f-493a-b3f3-9c6167b19e52.zip
-12.62 KB
-Bircan — bugün saat 21:06
 # Methods
 
 All method definitions belong to some class, and all method definitions are given inside the definition of the class to which they belong.
